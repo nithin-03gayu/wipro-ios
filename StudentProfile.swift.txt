@@ -1,0 +1,29 @@
+let studentName = "GAYATHRI"
+let rollNumber: Int = 2301
+
+var semester: Int = 5
+var cgpa: Double = 8.5
+
+let isHosteller: Bool = true
+
+// Print student details
+print("Name: \(studentName)")
+print("Roll Number: \(rollNumber)")
+print("Semester: \(semester)")
+print("CGPA: \(cgpa)")
+print("Hosteller: \(isHosteller)")
+
+semester += 1
+cgpa = 8.8
+
+print("\nAfter Updating:")
+print("Semester: \(semester)")
+print("CGPA: \(cgpa)")
+
+// Check data types
+print("\nData Types:")
+print(type(of: studentName))
+print(type(of: rollNumber))
+print(type(of: semester))
+print(type(of: cgpa))
+print(type(of: isHosteller))

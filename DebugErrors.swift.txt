@@ -1,0 +1,25 @@
+import Foundation
+
+var price = 250
+var quantity: Int = 3
+let taxRate: Double = 0.18
+
+// Update price
+price = 300
+
+// Calculate subtotal and tax
+let subtotal = Double(price) * Double(quantity)
+let tax = subtotal * taxRate
+
+// Calculate total
+let total = subtotal + tax
+
+var title = "Order"
+title = "Customer Order"
+
+print("Title: \(title)")
+print("Price: \(price)")
+print("Quantity: \(quantity)")
+print("Subtotal: \(subtotal)")
+print("Tax: \(tax)")
+print("Total: \(total)")

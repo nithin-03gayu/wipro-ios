@@ -1,0 +1,26 @@
+import Foundation
+
+let fahrenheitFactor = 9.0 / 5.0
+let kelvinFactor = 273.15
+
+var celsius: Double = 25.0
+
+// Convert Celsius to Fahrenheit and Kelvin
+var fahrenheit = (celsius * fahrenheitFactor) + 32
+var kelvin = celsius + kelvinFactor
+
+print("Celsius: \(celsius)")
+print("Fahrenheit: \(String(format: "%.1f", fahrenheit))")
+print("Kelvin: \(String(format: "%.1f", kelvin))")
+
+// Change Celsius value
+celsius = 30.0
+
+// Recalculate without changing formulas
+fahrenheit = (celsius * fahrenheitFactor) + 32
+kelvin = celsius + kelvinFactor
+
+print("\nUpdated Temperature:")
+print("Celsius: \(celsius)")
+print("Fahrenheit: \(String(format: "%.1f", fahrenheit))")
+print("Kelvin: \(String(format: "%.1f", kelvin))")
