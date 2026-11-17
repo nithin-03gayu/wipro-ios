@@ -1,0 +1,32 @@
+import Foundation
+
+// Step 1: Leap year checking
+let years = [1900, 2000, 2024, 2026]
+
+for year in years {
+    let isLeapYear = (year % 400 == 0) ||
+                     (year % 4 == 0 && year % 100 != 0)
+
+    print("\(year) is a leap year: \(isLeapYear)")
+}
+
+// Step 2: Check number between 1 and 100
+let number = 50
+
+let isInRange = (1...100).contains(number)
+
+print("\nNumber \(number) is between 1 and 100: \(isInRange)")
+
+// Step 3: Check even and not a multiple of 10
+let value = 24
+
+let isEvenNotMultipleOfTen = (value % 2 == 0) && (value % 10 != 0)
+
+print("Even and not a multiple of 10: \(isEvenNotMultipleOfTen)")
+
+// Step 4: Nil coalescing operator
+let nickname: String? = nil
+
+let displayName = nickname ?? "Guest"
+
+print("Welcome, \(displayName)")

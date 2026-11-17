@@ -1,0 +1,35 @@
+import Foundation
+
+// Step 1: Declare variables
+let itemPrice: Double = 450.0
+let quantity: Int = 3
+
+// Step 2: Calculate subtotal
+let subtotal = itemPrice * Double(quantity)
+
+// Step 3: Check coupon availability
+let hasCoupon = true
+
+// Step 4: Calculate discount using ternary operator
+let discountRate = hasCoupon ? 0.10 : 0.0
+
+let discount = subtotal * discountRate
+
+// Step 5: Calculate final bill
+let finalBill = subtotal - discount
+
+// Step 6: Comparison operator
+let isEligible = finalBill >= 1000
+
+// Step 7: Logical operator
+let hasFreeDelivery = isEligible && hasCoupon
+
+// Step 8: Display results
+print("----- RESTAURANT BILL -----")
+print("Item Price: \(itemPrice)")
+print("Quantity: \(quantity)")
+print("Subtotal: \(subtotal)")
+print("Coupon Applied: \(hasCoupon)")
+print("Discount: \(discount)")
+print("Final Bill: \(finalBill)")
+print("Eligible for Free Delivery: \(hasFreeDelivery)")
